@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-12T21:22:32.766Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="zR2N5Tfq4KusZwuZtLbE" version="14.4.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-25T14:04:43.675Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="yiKPM-ClA3EuZYmnQo7Q" version="14.5.1" type="github">
   <diagram id="vagj4mIiFFdzrsuVn0ZA" name="Page-1">
     <mxGraphModel dx="1483" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -13,126 +13,126 @@
         <mxCell id="Qnv-Sxvsp4bSTXPMWVuu-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Qnv-Sxvsp4bSTXPMWVuu-1" vertex="1">
           <mxGeometry y="160" width="320" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Qnv-Sxvsp4bSTXPMWVuu-4" value="fly ( ) : &#xa;pollinate. ( ) : &#xa;returnToHive ( ) :  &#xa;searchFor. ( ) : " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Qnv-Sxvsp4bSTXPMWVuu-1" vertex="1">
+        <mxCell id="Qnv-Sxvsp4bSTXPMWVuu-4" value="fly ( ) : &#xa;pollinate. ( ) : &#xa;returnToHive ( ) :  &#xa;searchFor. ( ) :&#xa;ignore. ( ) : (ignore.Flower, ignore.Hive, flower used when&#xa;                   flower too small, hive used when not ready to&#xa;                   return to hive)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Qnv-Sxvsp4bSTXPMWVuu-1" vertex="1">
           <mxGeometry y="168" width="320" height="112" as="geometry" />
         </mxCell>
         <mxCell id="Qnv-Sxvsp4bSTXPMWVuu-5" value="Flower" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="560" y="80" width="320" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="Qnv-Sxvsp4bSTXPMWVuu-6" value="pollen : boolean (if true, bee gets pollen)&#xa;flowers : number (more flowers = more pollen)&#xa;flowerColor : string (blue, yellow, purple most attractive)&#xa;flowerType : string (daisies, zinnas, asters most att.)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Qnv-Sxvsp4bSTXPMWVuu-5" vertex="1">
+        <mxCell id="Qnv-Sxvsp4bSTXPMWVuu-6" value="pollen : boolean (if true, bee gets pollen)&#xa;flowers : number (more flowers = more pollen)&#xa;flowerColor : string (blue, yellow, purple most attractive)&#xa;flowerType : string (daisies, zinnas, asters most att.)&#xa;flowerAge: number (1-5, 1 = youngest, 5 = Oldest)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Qnv-Sxvsp4bSTXPMWVuu-5" vertex="1">
           <mxGeometry y="26" width="320" height="94" as="geometry" />
         </mxCell>
         <mxCell id="Qnv-Sxvsp4bSTXPMWVuu-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Qnv-Sxvsp4bSTXPMWVuu-5" vertex="1">
           <mxGeometry y="120" width="320" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="Qnv-Sxvsp4bSTXPMWVuu-8" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Qnv-Sxvsp4bSTXPMWVuu-5" vertex="1">
+        <mxCell id="Qnv-Sxvsp4bSTXPMWVuu-8" value="grow.Flower ( ) : (Grows 1 point each time applied)&#xa;failedPollination ( ) : (Called when Bee tries pollinating &#xa;                                  flower that isn&#39;t ready)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Qnv-Sxvsp4bSTXPMWVuu-5" vertex="1">
           <mxGeometry y="128" width="320" height="72" as="geometry" />
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="922vUArNFsuo-3UQUm9C-1">
+        <mxCell id="922vUArNFsuo-3UQUm9C-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="922vUArNFsuo-3UQUm9C-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="664" y="470" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-1" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/easter-2031/24/Tulip_spring_flower-128.png" vertex="1" parent="1">
+        <mxCell id="922vUArNFsuo-3UQUm9C-1" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/easter-2031/24/Tulip_spring_flower-128.png" parent="1" vertex="1">
           <mxGeometry x="645" y="390" width="38" height="38" as="geometry" />
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-4" value="Pollen?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+        <mxCell id="922vUArNFsuo-3UQUm9C-4" value="Pollen?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="634" y="480" width="60" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-5" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+        <mxCell id="922vUArNFsuo-3UQUm9C-5" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="595" y="530" width="30" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-6" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+        <mxCell id="922vUArNFsuo-3UQUm9C-6" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="705" y="530" width="30" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-9" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;exitX=-0.023;exitY=0.49;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="922vUArNFsuo-3UQUm9C-4" target="922vUArNFsuo-3UQUm9C-5">
+        <mxCell id="922vUArNFsuo-3UQUm9C-9" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;exitX=-0.023;exitY=0.49;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="922vUArNFsuo-3UQUm9C-4" target="922vUArNFsuo-3UQUm9C-5" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="345" y="540" as="sourcePoint" />
             <mxPoint x="395" y="490" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-10" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;exitX=1.017;exitY=0.57;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.567;entryY=-0.09;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="922vUArNFsuo-3UQUm9C-4" target="922vUArNFsuo-3UQUm9C-6">
+        <mxCell id="922vUArNFsuo-3UQUm9C-10" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;exitX=1.017;exitY=0.57;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.567;entryY=-0.09;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="922vUArNFsuo-3UQUm9C-4" target="922vUArNFsuo-3UQUm9C-6" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="715" y="510" as="sourcePoint" />
             <mxPoint x="765" y="460" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-11" value="" style="endArrow=classic;html=1;exitX=0.6;exitY=1.15;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="922vUArNFsuo-3UQUm9C-6">
+        <mxCell id="922vUArNFsuo-3UQUm9C-11" value="" style="endArrow=classic;html=1;exitX=0.6;exitY=1.15;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="922vUArNFsuo-3UQUm9C-6" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="345" y="540" as="sourcePoint" />
             <mxPoint x="723" y="610" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-12" value="returntoHive" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+        <mxCell id="922vUArNFsuo-3UQUm9C-12" value="returntoHive" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="705" y="990" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-13" value="" style="endArrow=classic;html=1;exitX=0.56;exitY=1.11;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="922vUArNFsuo-3UQUm9C-5">
+        <mxCell id="922vUArNFsuo-3UQUm9C-13" value="" style="endArrow=classic;html=1;exitX=0.56;exitY=1.11;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="922vUArNFsuo-3UQUm9C-5" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="545" y="610" as="sourcePoint" />
             <mxPoint x="612" y="610" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-14" value="pollinate.Flower" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+        <mxCell id="922vUArNFsuo-3UQUm9C-14" value="pollinate.Flower" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="560" y="620" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-16" value="searchfor.Flower" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+        <mxCell id="922vUArNFsuo-3UQUm9C-16" value="searchfor.Flower" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="675" y="620" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-17" value="searchfor.Flower" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+        <mxCell id="922vUArNFsuo-3UQUm9C-17" value="searchfor.Flower" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="615" y="320" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-18" value="" style="endArrow=classic;html=1;exitX=0.528;exitY=1.09;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="922vUArNFsuo-3UQUm9C-17">
+        <mxCell id="922vUArNFsuo-3UQUm9C-18" value="" style="endArrow=classic;html=1;exitX=0.528;exitY=1.09;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="922vUArNFsuo-3UQUm9C-17" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="345" y="440" as="sourcePoint" />
             <mxPoint x="668" y="380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-21" value="" style="endArrow=classic;html=1;exitX=0.557;exitY=1.29;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="922vUArNFsuo-3UQUm9C-14">
+        <mxCell id="922vUArNFsuo-3UQUm9C-21" value="" style="endArrow=classic;html=1;exitX=0.557;exitY=1.29;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="922vUArNFsuo-3UQUm9C-14" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="345" y="640" as="sourcePoint" />
             <mxPoint x="613" y="700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-22" value="searchfor.Flower" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+        <mxCell id="922vUArNFsuo-3UQUm9C-22" value="searchfor.Flower" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="565" y="710" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-25" value="More Flowers?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+        <mxCell id="922vUArNFsuo-3UQUm9C-25" value="More Flowers?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="680" y="780" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-28" value="" style="endArrow=classic;html=1;exitX=0.856;exitY=1.17;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="922vUArNFsuo-3UQUm9C-16">
+        <mxCell id="922vUArNFsuo-3UQUm9C-28" value="" style="endArrow=classic;html=1;exitX=0.856;exitY=1.17;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="922vUArNFsuo-3UQUm9C-16" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="345" y="740" as="sourcePoint" />
             <mxPoint x="761" y="780" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-29" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;exitX=-0.002;exitY=0.35;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="922vUArNFsuo-3UQUm9C-25">
+        <mxCell id="922vUArNFsuo-3UQUm9C-29" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;exitX=-0.002;exitY=0.35;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="922vUArNFsuo-3UQUm9C-25" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="345" y="840" as="sourcePoint" />
             <mxPoint x="645" y="830" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-30" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;exitX=1.091;exitY=0.39;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="922vUArNFsuo-3UQUm9C-25">
+        <mxCell id="922vUArNFsuo-3UQUm9C-30" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;exitX=1.091;exitY=0.39;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="922vUArNFsuo-3UQUm9C-25" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="345" y="840" as="sourcePoint" />
             <mxPoint x="825" y="830" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-31" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+        <mxCell id="922vUArNFsuo-3UQUm9C-31" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="634" y="830" width="30" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-32" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+        <mxCell id="922vUArNFsuo-3UQUm9C-32" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="810" y="830" width="30" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-33" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="922vUArNFsuo-3UQUm9C-31">
+        <mxCell id="922vUArNFsuo-3UQUm9C-33" value="" style="endArrow=classic;html=1;" parent="1" source="922vUArNFsuo-3UQUm9C-31" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="664" y="860" as="sourcePoint" />
             <mxPoint x="650" y="910" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-34" value="pollinate.Flower" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+        <mxCell id="922vUArNFsuo-3UQUm9C-34" value="pollinate.Flower" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="1" vertex="1">
           <mxGeometry x="600" y="910" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-35" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;exitX=1.037;exitY=0.59;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="922vUArNFsuo-3UQUm9C-34" target="922vUArNFsuo-3UQUm9C-12">
+        <mxCell id="922vUArNFsuo-3UQUm9C-35" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;exitX=1.037;exitY=0.59;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="922vUArNFsuo-3UQUm9C-34" target="922vUArNFsuo-3UQUm9C-12" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="555" y="840" as="sourcePoint" />
             <mxPoint x="605" y="790" as="targetPoint" />
@@ -141,16 +141,118 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-36" value="" style="endArrow=classic;html=1;exitX=0.487;exitY=1.19;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.865;entryY=-0.09;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="922vUArNFsuo-3UQUm9C-32" target="922vUArNFsuo-3UQUm9C-12">
+        <mxCell id="922vUArNFsuo-3UQUm9C-36" value="" style="endArrow=classic;html=1;exitX=0.487;exitY=1.19;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.865;entryY=-0.09;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="922vUArNFsuo-3UQUm9C-32" target="922vUArNFsuo-3UQUm9C-12" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="555" y="840" as="sourcePoint" />
             <mxPoint x="605" y="790" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="922vUArNFsuo-3UQUm9C-37" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1.07;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.167;entryY=-0.17;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="922vUArNFsuo-3UQUm9C-22" target="922vUArNFsuo-3UQUm9C-25">
+        <mxCell id="922vUArNFsuo-3UQUm9C-37" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1.07;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.167;entryY=-0.17;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="922vUArNFsuo-3UQUm9C-22" target="922vUArNFsuo-3UQUm9C-25" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="635" y="790" as="sourcePoint" />
             <mxPoint x="685" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-1" value="Hive" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="400" width="320" height="218" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-2" value="honey: &#xa;queen: &#xa;workerBees: " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="YPYL6ZLWhKxABKS87VsH-1">
+          <mxGeometry y="26" width="320" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="YPYL6ZLWhKxABKS87VsH-1">
+          <mxGeometry y="120" width="320" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-4" value="returnToHive ( ) : " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="YPYL6ZLWhKxABKS87VsH-1">
+          <mxGeometry y="128" width="320" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-7" value="Flower Grow Chart" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="920" y="80" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-9" value="Flower Grow Scale = 1 point, max of 5&#xa;&#xa;When grow function called, flower aged by 1 point&#xa;&#xa;Ages 1-3 would not be able to be pollinated.&#xa;&#xa;Ages 4 &amp; 5 are able to be pollinated." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="YPYL6ZLWhKxABKS87VsH-7">
+          <mxGeometry y="26" width="280" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-11" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/easter-2031/24/Tulip_spring_flower-128.png" vertex="1" parent="1">
+          <mxGeometry x="973.5" y="330" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-12" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/easter-2031/24/Tulip_spring_flower-128.png" vertex="1" parent="1">
+          <mxGeometry x="1033.5" y="320" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-13" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/easter-2031/24/Tulip_spring_flower-128.png;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1103.5" y="302" width="58" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-14" value="Age 1-2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="958.5" y="300" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-15" value="Age 3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="1028.5" y="290" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-16" value="Age 4-5" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="1102.5" y="270" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-19" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/24x24-free-application-icons/24/Bee.png;fillColor=#FFFFFF;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="970" y="428" width="38" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-20" value="Example of Bees and Flower Age" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="981.5" y="399" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-21" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/easter-2031/24/Tulip_spring_flower-128.png" vertex="1" parent="1">
+          <mxGeometry x="1061.5" y="468" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-22" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1018" y="448" as="sourcePoint" />
+            <mxPoint x="1128.5" y="448" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-24" value="Age 1- 2" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1007" y="508" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-25" value="Flower is too small. No &#xa;pollen is available at this&#xa;stage. The Bee will not&#xa;use this flower." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="YPYL6ZLWhKxABKS87VsH-24">
+          <mxGeometry y="26" width="140" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-28" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/easter-2031/24/Tulip_spring_flower-128.png" vertex="1" parent="1">
+          <mxGeometry x="1057" y="710" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-29" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/24x24-free-application-icons/24/Bee.png;fillColor=#FFFFFF;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="968" y="672" width="38" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-30" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1028.5" y="690" as="sourcePoint" />
+            <mxPoint x="1138.5" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-31" value="Age 3" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1007.5" y="760" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-32" value="The flower has called on&#xa;the grow function and &#xa;grown older. However,&#xa;it is still not able to be&#xa;pollinated. It must grow&#xa;at least one more time.&#xa;The Bee will not use this&#xa;flower. " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="YPYL6ZLWhKxABKS87VsH-31">
+          <mxGeometry y="26" width="140" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-35" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/easter-2031/24/Tulip_spring_flower-128.png;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1048.5" y="1010" width="58" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-36" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/24x24-free-application-icons/24/Bee.png;fillColor=#FFFFFF;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="958.5" y="960" width="38" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-37" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1008.5" y="978" as="sourcePoint" />
+            <mxPoint x="1048.5" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-38" value="Age 4-5" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1007.5" y="1090" width="140" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-39" value="The flower has called on&#xa;the grow function again.&#xa;It is now 4-5, meaning it&#xa;is ready for pollination.&#xa;Bees will no longer &#xa;ignore/fail to pollinate&#xa;this flower. " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="YPYL6ZLWhKxABKS87VsH-38">
+          <mxGeometry y="26" width="140" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-43" value="Bee Pollinates&lt;br&gt;Then Leaves" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="1048.5" y="980" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPYL6ZLWhKxABKS87VsH-45" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1148.5" y="990" as="sourcePoint" />
+            <mxPoint x="1198.5" y="980" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
