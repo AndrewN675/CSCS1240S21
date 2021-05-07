@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-05-07T19:40:26.183Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="HxutOXgjpZh2jNhuouNr" version="14.6.11" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-07T19:42:03.251Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="utVPbVh7oSxv3zJKIHLE" version="14.6.11" type="github">
   <diagram id="8BCJYSKHF3MGwVxL7yvD" name="Page-1">
-    <mxGraphModel dx="1888" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3445" dy="1370" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -62,7 +62,7 @@
           <mxGeometry y="120" width="280" height="8" as="geometry" />
         </mxCell>
         <mxCell id="XXDN_DNbRARET9HkGt8j-21" value="Item List : Keys , Bones , Notes , Maps&lt;br&gt;&lt;br&gt;Keys : Used for doors. Color coded.&amp;nbsp;&lt;br&gt;Bones : Decorative/Filler item&lt;br&gt;Notes : May give hints/story&lt;br&gt;Maps : Give directions (Take left door, right, then forward)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="440" y="640" width="320" height="160" as="geometry" />
+          <mxGeometry x="440" y="640" width="320" height="120" as="geometry" />
         </mxCell>
         <mxCell id="XXDN_DNbRARET9HkGt8j-22" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#277116;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.door_lock;" parent="1" vertex="1">
           <mxGeometry x="-340" y="880" width="78" height="78" as="geometry" />
@@ -372,6 +372,15 @@
         </mxCell>
         <mxCell id="bWUiQ2FjTbWtssfmHzKX-107" value="Take out door colors if needed" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry x="220" y="855" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bWUiQ2FjTbWtssfmHzKX-108" value="Maybe remove Maps or Notes for simplicity-sake" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="460" y="760" width="270" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bWUiQ2FjTbWtssfmHzKX-109" value="Maybe no maps, but notes give you clues/directions?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="450" y="780" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bWUiQ2FjTbWtssfmHzKX-110" value="Edit Item types" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="175" y="780" width="90" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
